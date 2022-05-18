@@ -1,3 +1,4 @@
+#define NO_OF_ALERTS 2
 extern int emailAlertCallCount;
 extern int ledAlertCallCount;
 

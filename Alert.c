@@ -9,7 +9,7 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters, struct Stats 
 
 	if(	computedStats.max > maxThreshold )
 	{
-		for( int i = 0 ; i < 2 ; i++ )
+		for( int i = 0 ; i < NO_OF_ALERTS ; i++ )
 		{
 			(*alerters[i])();
 		}

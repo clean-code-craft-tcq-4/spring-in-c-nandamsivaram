@@ -11,8 +11,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 	float var = 0;
 		if(numberset != nullptr)
 		{
-			min = numberset[0];
-			max = numberset[0];
+			s.min = numberset[0];
+			s.max = numberset[0];
 			for(int i = 0; i < setlength ; i++)
 			{
 				var += numberset[i];

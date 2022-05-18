@@ -11,11 +11,8 @@ void check_and_alert(float maxThreshold, alerter_funcptr alerters[], struct Stat
 
 	if(	computedStats.max > maxThreshold )
 	{
-		for( int i = 0 ; i < NO_OF_ALERTS ; i++ )
-		{
-			(*alerters[i])();
-		}
-
+			alerters[0]();
+			alerters[1]();
 	}
 	else
 	{
